@@ -31,11 +31,11 @@ module.exports = {
 	name: 'DiscordTickets',
 	presences: [
 		{
-			activity: '%snew',
+			activity: 'with your tickets',
 			type: 'PLAYING'
 		},
 		{
-			activity: 'with tickets',
+			activity: 'with metrocar 4001',
 			type: 'PLAYING'
 		},
 		{
@@ -48,16 +48,16 @@ module.exports = {
 	err_colour: 'RED',
 	cooldown: 3,
 
-	guild: '', // ID of your guild (REQUIRED)
-	staff_role: '', // ID of your Support Team role (REQUIRED)
+	guild: '785637586370297886', // ID of your guild (REQUIRED)
+	staff_role: '785671624770453514', // ID of your Support Team role (REQUIRED)
 
 	tickets: {
-		category: '', // ID of your tickets category (REQUIRED)
+		category: '786029101743734795', // ID of your tickets category (REQUIRED)
 		send_img: true,
 		ping: 'here',
 		text: `Hello there, {{ tag }}!
-		A member of staff will assist you shortly.
-		In the mean time, please describe your issue in as much detail as possible! :)`,
+		A member of the tyne and wear metro supervisions team will assist you shortly.
+		In the mean time, please describe your issue in as much detail as possible, including player information if this is a player report`,
 		pin: false,
 		max: 3
 	},
@@ -71,12 +71,12 @@ module.exports = {
 			enabled: false,
 			server: 'https://tickets.example.com',
 		},
-		channel: '' // ID of your archives channel
+		channel: '786029434788118548' // ID of your archives channel
 	},
 
 	panel: {
-		title: 'Support Tickets',
-		description: 'Need help? No problem! React to this panel to create a new support ticket so our Support Team can assist you.',
+		title: 'MyMetro Assistance',
+		description: 'We offer a vast-range of assistance here at the Tyne and Wear metro, by reacting to this message it will get you straight into a direct channel with the staffing department who will assist you with your issues there.',
 		reaction: '🧾'
 	},
 
@@ -90,8 +90,8 @@ module.exports = {
 			keep_for: 7
 		},
 		discord: {
-			enabled: false,
-			channel: '' // ID of your log channel
+			enabled: true,
+			channel: '786029434788118548' // ID of your log channel
 		}
 	},
 
